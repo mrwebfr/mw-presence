@@ -4,6 +4,7 @@
 
 This bash script in **English** or **French** is based on `xdotool`. 
 The script presses the control key on the keyboard, moves the mouse or makes left clicks.
+A menu offers you the various possible choices.
 
 **Useful to avoid automatic absence in a program.**
 
