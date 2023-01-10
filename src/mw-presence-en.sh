@@ -92,9 +92,7 @@ esac
 clear
 i=0
 while true; do
-     sleep "${interval}${unit}"
      position=$(shuf -i 200-250 -n1)
-     let "i+=${interval}"
 
      if [ "$active_key" = true ]; then
          sh -c "xdotool key ctrl"
@@ -112,4 +110,6 @@ while true; do
      echo "To exit: CTRL + c"
      echo "-----------------------"
      echo "You've been away for $i${unit}"
+     sleep "${interval}${unit}"
+     let "i+=${interval}"
 done
