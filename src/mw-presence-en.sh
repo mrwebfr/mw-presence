@@ -4,25 +4,7 @@ if ! dpkg -s 'xdotool' >/dev/null 2>&1; then
     sudo apt install xdotool
 fi
 
-##################################
-# Choose an interval unit
-##################################
-clear
-read -p "Choose an interval unit:
-1) Seconds
-2) minutes
-3) hours
-4) Exit
-
-" choice
-
-case $choice in
-     1 ) unit="s";;
-     2 ) unit="m";;
-     3 ) unit="h";;
-     4 ) exit;;
-     * ) echo "Please choose a valid option.";;
-esac
+unit="m"
 
 ##################################
 # Enter an interval
